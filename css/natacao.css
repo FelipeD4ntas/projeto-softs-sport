@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+* {
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #fafafa;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.336);
+}
+
+header {
+    height: 100vh;
+    position: relative;
+    background: #42B9DF;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fundo-gif {
+    height: 100%;
+    width: 100%;
+    background-image: url('../natacao/agua.gif');
+    background-size: cover;
+    background-position: fixed;
+    position: absolute;
+    top: 0;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+#titulo {
+    border: 1px solid white;
+    background: transparent;
+    max-width: 740px;
+    padding: 40px 30px;
+    background: rgba(255, 255, 255, 0.137);
+}
+
+#titulo h1 {
+    font-size: 6rem;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    line-height: 7rem;
+}
+
+#btn-voltar {
+    width: 40px;
+    cursor: pointer;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    animation: jumping 1s linear infinite;
+}
+
+@keyframes jumping {
+    from {
+        transform: translateX(-15px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-15px);
+    }
+}
+
+.artigos {
+    padding: 100px calc((100% - 1140px) / 2);
+}
+
+.primeiro-artigo {
+    background-image: url('../natacao/piscina-top.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.segundo-artigo {
+    background-image: linear-gradient( to bottom, #42B9DF 35%, white 35%, white 49%, #42B9DF 0%, #42B9DF);
+    padding-top: 50px;
+}
+
+.segundo-artigo h1 {
+    margin-top: 10px;
+    padding-bottom: 0;
+}
+
+.terceiro-artigo {
+    background-image: url('../natacao/piscina-bottom.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.quarto-artigo {
+    background: #42B9DF;
+}
+
+.box-itens-artigo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-artigo {
+    max-width: 640px;
+}
+
+.item-artigo:first-child {
+    padding-right: 30px;
+}
+
+.item-artigo p {
+    color: #fafafa;
+    padding-top: 20px;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.336);
+}
+
+.cont-terceiro-art {
+    padding-top: 50px;
+}
+
+.background-terceiro-art,
+.cont-primeiro-art {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    background: #1d7491e3;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.267);
+}
+
+.box-curiosidades {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: white;
+}
+
+.curiosidade h1,
+.curiosidade p {
+    color: rgb(32, 32, 32);
+    text-shadow: none;
+}
+
+.box-img-atletas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-img-atletas img {
+    padding: 20px;
+}
+
+#atleta-um {
+    width: 560px;
+    max-height: 450px;
+    object-fit: cover;
+    padding-left: 0;
+}
+
+#atleta-dois {
+    width: 455px;
+    max-height: 450px;
+    object-fit: cover;
+}
+
+#atleta-tres {
+    width: 245px;
+    max-height: 450px;
+    object-fit: cover;
+    padding-right: 0;
+}
+
+#primeiras-atletas {
+    margin-top: 30px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.445);
+}
+
+.box-cards {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    color: rgb(32, 32, 32);
+    position: relative;
+}
+
+.cont-card {
+    width: max-content;
+    height: max-content;
+}
+
+.cards {
+    width: 230px;
+    height: 200px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+.face {
+    border: none;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.473);
+    border-radius: 10px;
+    position: absolute;
+}
+
+#front {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+#front p {
+    text-align: center;
+    font-family: 'Concert One', cursive;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+#front img {
+    width: 100px;
+    height: 80px;
+    padding: 10px;
+}
+
+#back {
+    padding: 20px;
+    backface-visibility: hidden;
+    background: #1d7491e3;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+}
+
+#back p {
+    font-size: 1.8rem;
+}
+
+.nado-peito {
+    background: #3D97F56e;
+}
+
+.nado-costa {
+    background: #3BEBB66e;
+}
+
+.nado-crawl {
+    background: #3BEBB66e;
+}
+
+.nado-borboleta {
+    background: #3D97F56e;
+}
+
+.box-maria {
+    justify-content: left;
+}
+
+.box-img-maria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.box-img-maria p {
+    font-family: 'Concert One', cursive;
+    font-size: 2.5rem;
+    color: rgb(32, 32, 32);
+    padding: 0;
+}
+
+#maria {
+    max-height: 700px;
+    justify-self: left;
+    position: relative;
+    z-index: 2;
+}
+
+#circulo {
+    max-width: 300px;
+    position: absolute;
+    right: 0;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    background-color: white;
+}
+
+footer p {
+    color: rgb(32, 32, 32);
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer span {
+    color: #F15048;
+    font-weight: bold;
+    font-size: 1.8rem;
+}

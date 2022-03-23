@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    color: #fafafa;
+    padding-top: 20px;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+}
+
+h1,
+h2 {
+    font-size: 3.5rem;
+    color: #fafafa;
+    display: inline-block;
+    border-bottom: 5px solid #FFD407; 
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+main {
+    position: relative;
+}
+
+header {
+    height: 100vh;
+    position: relative;
+    display: flex;
+}
+
+.bg-topo-um {
+    width: 50%;
+    height: 100%;
+    background-image: url('../img/corrida/topo-bg.jpeg');
+    background-position: bottom;
+    background-size: cover;
+    z-index: 175;
+    border-bottom: 5px solid #FFD407;
+    border-right: 5px solid #FFD407;
+}
+
+.bg-topo-dois {
+    width: 20%;
+    height: 100%;
+    background-image: url('../img/corrida/topo-bg.jpeg');
+    background-position: right;
+    background-size: cover;
+    z-index: 175;
+    border-bottom: 5px solid #FFD407;
+    border-left: 5px solid #FFD407;
+}
+
+.box-titulo {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+#titulo {
+    position: relative;
+    height: 100%;
+    padding: 40px 30px;
+    background: black;
+    display: flex;
+}
+
+#titulo h1 {
+    font-size: 4rem;
+    color: #7996A8;
+    text-shadow: 2px 2px 0px black;
+    text-align: right;
+    line-height: 5rem;
+    z-index: 175;
+    border: none;
+}
+
+#circulo {
+    max-width: 800px;
+    position: absolute;
+    top: -200px;
+    left: -130px;
+    transition: all 0.5s;
+}
+
+#btn-voltar {
+    filter: invert(100%);
+    width: 40px;
+    cursor: pointer;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    animation: jumping 1s linear infinite;
+    z-index: 200;
+}
+
+@keyframes jumping {
+    from {
+        transform: translateX(-15px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-15px);
+    }
+}
+
+.artigos {
+    padding: 70px calc((100% - 1140px) / 2);
+}
+
+.cont-artigo {
+    max-width: 670px;
+}
+
+.terceiro-art h1 {
+    border: none;
+}
+
+.terceiro-art p,
+.terceiro-art h1, h2 {
+    color: #0d0d0d;
+}
+
+.primeiro-art:first-child {
+    padding-right: 0;
+}
+
+.artigo-um {
+    background-image: linear-gradient(to bottom, black 55% , white 0%, white);
+    display: flex;
+}
+
+.artigo-dois {
+    background-image: linear-gradient(to right, black 61% , white 0%, white);
+    display: flex;
+}
+
+.artigo-tres {
+    background-image: linear-gradient(to right, white 53% , black 0%, black);
+}
+
+.artigo-quatro {
+    background-image: linear-gradient(to right, black 48% , white 0%, white);
+    display: flex;
+}
+
+.artigo-um p,
+.artigo-um h1 {
+    color: #fafafa;;
+}
+
+.artigo-dois p,
+.artigo-dois h1,
+.artigo-quatro p,
+.artigo-quatro h1 {
+    color: #0d0d0d;
+}
+
+.box-primeiro-art {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sub-artigo-um {
+    display: flex;
+    padding-top: 15px;
+}
+
+.sub-artigo-um p {
+    color: #0d0d0d;
+}
+
+.sub-primeiro-art {
+    flex: 1 1 auto;
+}
+
+.sub-primeiro-art:first-child {
+    padding-right: 20px;
+}
+
+.img-primeiro-art {
+    padding-left: 30px;
+}
+
+#corredor {
+    width: 430px;
+}
+
+#corredor-dois {
+    max-width: 690px;
+    height: 100%;
+    margin-right: 50px;
+    padding-right: 30px;
+    object-fit: cover;
+}
+
+#corredor-br {
+    max-width: 590px;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+}
+
+#circulo_dois {
+    max-width: 200px;
+    position: absolute;
+    top: 200px;
+    left: 90px;
+}
+
+.img-quarto-art {
+    position: relative;
+}
+
+.box-sub-art-tres {
+    display: flex;
+}
+
+.info-terceiro-art {
+    opacity: 1;
+    padding-top: 30px;
+    padding-right: 30px;
+    width: 80%;
+    display: flex;
+}
+
+.cont-info-terceiro-art {
+    max-width: 500px;
+}
+
+#img-info {
+    max-width: 450px;
+    height: 440px;
+    object-fit: cover;
+    padding-left: 30px;
+}
+
+.sub-terceiro-art {
+    padding-top: 30px;
+}
+
+.sub-terceiro-art p {
+    color:#0d0d0d;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.info-terceiro-art p {
+    color:#0d0d0d;
+}
+
+#corrida {
+    background: #FFD407;
+}
+
+.art-marcha,
+.art-revezamento,
+.art-salto,
+.art-arremesso,
+.art-combinada {
+    display: none;
+}
+
+.sub-terceiro-art p:hover {
+    transform: scale(1.06);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    background-color: black;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer span {
+    color: #F15048;
+    font-weight: bold;
+}

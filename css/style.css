@@ -1,0 +1,90 @@
+    @charset "UTF-8";
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    html {
+        font-size: 62.5%;
+    }
+    
+    body {
+        font-size: 1.6rem;
+    }
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .box-lista {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+    }
+    
+    .item {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        transition: all .7s ease-in-out;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .item:hover {
+        flex-grow: 10;
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+    }
+    
+    .item .link {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+        font-size: 0;
+        transition: all .5s ease-in-out;
+    }
+    
+    .item:hover .link {
+        font-size: 3.2rem;
+        text-shadow: 1px 1px 2px black;
+    }
+
+    .link:hover {
+        transform: scale(2);
+        color: #F15048;
+        text-shadow: 2px 2px 2px black;
+    }
+    
+    .futebol {
+        background-image: url("../img/item1.png");
+    }
+    
+    .natacao {
+        background-image: url("../img/item2.png");
+    }
+    
+    .basquete {
+        background-image: url("../img/item3.png");
+    }
+    
+    .corrida {
+        background-image: url("../img/item4.png");
+    }
+    
+    @media screen and (max-width: 768px) {
+        .box-lista {
+            flex-direction: column;
+        }
+        .item .link {
+            font-size: 2rem;
+        }
+    }

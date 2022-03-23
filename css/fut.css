@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+body {
+    overflow-x: hidden;
+}
+
+h1 {
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background: black;
+    width: 100%;
+    position: relative;
+}
+
+.box-topo {
+    padding: 0 calc((100% - 1140px) / 2);
+    padding-top: 50px;
+    display: flex;
+    justify-content: right;
+    position: relative;
+}
+
+#btn-voltar {
+    width: 40px;
+    cursor: pointer;
+    position: absolute;
+    left: 50px;
+    animation: jumping 1s linear infinite;
+}
+
+@keyframes jumping {
+    from {
+        transform: translateX(-15px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-15px);
+    }
+}
+
+#img-header {
+    max-width: 950px;
+    max-height: 760px;
+    filter: grayscale(80%);
+}
+
+#titulo {
+    background: #F15048;
+    box-shadow: 1px 0.5px 0px rgba(0, 0, 0, 0.61);
+    max-width: 740px;
+    height: 350px;
+    padding: 40px 30px;
+    margin: 0 calc((100% - 1140px) / 2);
+    position: absolute;
+    bottom: -250px;
+    left: 0;
+}
+
+#titulo>h1 {
+    font-size: 6rem;
+    color: white;
+    text-align: left;
+    line-height: 7rem;
+    text-shadow: 1px 1px 1px black;
+}
+
+#circulo {
+    position: absolute;
+    left: 0px;
+    bottom: 30px;
+    height: 500px;
+    z-index: -1;
+}
+
+#circulo-um {
+    position: absolute;
+    filter: none;
+    right: 200px;
+    transition: all 1s;
+    max-height: 660px;
+}
+
+#circulo_dois {
+    position: absolute;
+    right: 0px;
+    bottom: -200px;
+    height: 400px;
+    transition: all 1s;
+}
+
+#circulo_dois:hover {
+    transform: rotate(180deg);
+}
+
+#circulo-tres {
+    height: 500px;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+.box-artigos {
+    margin-top: 300px;
+}
+
+.corpo-primeito-art {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 calc((100% - 1140px) / 2);
+}
+
+.corpo-segundo-art {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 150px calc((100% - 1140px) / 2);
+    padding-bottom: 250px;
+    background: #f2f2f2;
+    box-shadow: inset 0px 0px, inset 0px -250px black;
+    position: relative;
+}
+
+.corpo-terceiro-art {
+    padding: 100px calc((100% - 1140px) / 2);
+    display: flex;
+    justify-content: space-between;
+}
+
+.corpo-quarto-art {
+    padding: 100px calc((100% - 1140px) / 2);
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    color: white
+}
+
+.corpo-quinto-art {
+    padding: 30px calc((100% - 1140px) / 2);
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.corpo-quarto-art>.item-art p:nth-child(2) {
+    text-align: left;
+}
+
+.item-art {
+    max-width: 640px;
+    flex: 1;
+    position: relative;
+}
+
+.item-art:first-child {
+    margin-right: 40px;
+}
+
+.item-art h1 {
+    font-size: 3.5rem;
+}
+
+.item-art p {
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    margin: 30px 0;
+}
+
+.item-art:nth-child(2)>h1,
+.item-art:nth-child(2)>p {
+    text-align: right;
+}
+
+.curiosidade {
+    flex: 2 1 auto;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    padding: 20px;
+}
+
+.futebol-aristocrata {
+    width: 375px;
+    height: 575px;
+    background-image: url('../futebol/futebol-aristocrata.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-right: 40px;
+}
+
+.aristocrata {
+    max-width: 800px;
+}
+
+.aristocrata h1 {
+    text-align: center !important;
+}
+
+.box-paragrafos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.paragrafos {
+    max-width: 400px;
+    flex: 1;
+}
+
+.paragrafos:first-child {
+    margin-right: 40px;
+}
+
+blockquote {
+    padding: 30px;
+    max-width: 500px;
+    line-height: 2.5rem;
+    position: relative
+}
+
+blockquote::before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 100px;
+    background: #F15048;
+    position: absolute;
+    left: 0px;
+}
+
+#jogador-um {
+    filter: grayscale();
+}
+
+#jogador-dois {
+    position: relative;
+    max-height: 600px;
+    max-width: 500px;
+}
+
+#jogadores-img {
+    width: 570px;
+    height: 375px;
+    margin: 60px 0;
+    object-fit: cover;
+}
+
+#futebol-ingles {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: center top;
+}
+
+#neymar {
+    width: 470px;
+    height: 590px;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.brasil>p,
+.brasil>h1 {
+    text-align: left !important;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    background-color: #333333;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer span {
+    color: #F15048;
+    font-weight: bold;
+}
