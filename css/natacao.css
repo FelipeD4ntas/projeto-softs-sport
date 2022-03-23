@@ -203,6 +203,7 @@ header {
     width: 230px;
     height: 200px;
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
     display: flex;
     justify-content: center;
     cursor: pointer;
@@ -264,6 +265,14 @@ header {
 
 .nado-borboleta {
     background: #3D97F56e;
+}
+
+#front #back {
+    -webkit-perspective: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0,0,0);
+    visibility:visible;
+    backface-visibility: hidden;
 }
 
 .box-maria {
