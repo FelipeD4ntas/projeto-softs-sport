@@ -18,6 +18,12 @@
         text-decoration: none;
         cursor: pointer;
     }
+
+    nav {
+        z-index: -1;
+        position: absolute;
+        transition: all 3s;
+    }
     
     .box-lista {
         width: 100vw;
@@ -85,7 +91,7 @@
     .corrida {
         background-image: url("../img/item4.png");
     }
-    
+
     @media screen and (max-width: 768px) {
         .box-lista {
             -webkit-flex-direction: column;
