@@ -27,18 +27,24 @@
     
     .item {
         list-style-type: none;
+        display: -webkit-flex;
         display: flex;
+        -webkit-justify-content: center;
         justify-content: center;
+        -webkit-align-items: center;
         align-items: center;
+        -webkit-flex-grow: 1;
         flex-grow: 1;
         transition: all .7s ease-in-out;
         filter: grayscale(100%);
         -webkit-filter: grayscale(100%);
         background-position: center;
         background-size: cover;
+        max-width: 100vw;
     }
     
     .item:hover {
+        -webkit-flex-grow: 10;
         flex-grow: 10;
         filter: grayscale(0%);
         -webkit-filter: grayscale(0%);
@@ -82,6 +88,7 @@
     
     @media screen and (max-width: 768px) {
         .box-lista {
+            -webkit-flex-direction: column;
             flex-direction: column;
         }
         .item .link {
