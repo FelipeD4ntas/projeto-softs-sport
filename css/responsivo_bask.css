@@ -201,6 +201,12 @@
     .box-titulo {
         justify-content: center;
     }
+    .artigo-um-bg {
+        background-attachment: scroll;
+    }
+    .artigo-tres-bg {
+        background-attachment: scroll;
+    }
 }
 
 @media(max-width: 280px) {
