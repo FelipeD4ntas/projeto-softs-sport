@@ -199,6 +199,26 @@
         left: 30px;
         top: 10px;
     }
+    #back {
+        padding: 20px;
+        background: #1d7491;
+    }
+    
+    .nado-peito {
+        background: #3D97F5;
+    }
+    
+    .nado-costa {
+        background: #3BEBB6;
+    }
+    
+    .nado-crawl {
+        background: #3BEBB6;
+    }
+    
+    .nado-borboleta {
+        background: #3D97F5;
+    }
 }
 
 @media(max-width: 280px) {

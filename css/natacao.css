@@ -185,7 +185,7 @@ header {
 }
 
 .box-cards {
-    display: flex;
+    display: flex; 
     justify-content: space-between;
     align-content: space-evenly;
     flex-wrap: wrap;
