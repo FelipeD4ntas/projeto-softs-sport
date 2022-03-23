@@ -194,6 +194,11 @@
         padding-top: 50px;
         padding-bottom: 50px;
     }
+    #btn-voltar {
+        width: 30px;
+        left: 30px;
+        top: 10px;
+    }
 }
 
 @media(max-width: 280px) {
@@ -244,3 +249,10 @@
         max-height: 150px;
     }
 }
+
+@supports (-webkit-touch-callout: inherit) {
+    .primeiro-artigo,
+    .terceiro-artigo {
+    background-attachment: scroll;
+    }
+  }
