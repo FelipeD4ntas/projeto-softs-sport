@@ -38,3 +38,4 @@ function saiu_tres() {
 function saiu_quatro() {
     cards[3].style.transform = 'rotateY(0deg)';
 }
+  

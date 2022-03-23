@@ -199,6 +199,13 @@
         left: 30px;
         top: 10px;
     }
+    #front #back {
+        -webkit-perspective: 0;
+        -webkit-backface-visibility: hidden;
+        -webkit-transform: translate3d(0,0,0);
+        visibility:visible;
+        backface-visibility: hidden;
+    }
 }
 
 @media(max-width: 280px) {
@@ -256,3 +263,6 @@
     background-attachment: scroll;
     }
   }
+
+  
+  
