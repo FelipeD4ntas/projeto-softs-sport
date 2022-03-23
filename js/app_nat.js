@@ -27,7 +27,7 @@ function entrou_tres() {
 }
 function entrou_quatro() {
     cards[3].style.transform = 'rotateY(180deg)';
-    front[2].style.opacity = '0';
+    front[3].style.opacity = '0';
 }
 
 // Funções para voltar os cards da natação para posição normal.
@@ -41,10 +41,10 @@ function saiu_dois() {
 }
 function saiu_tres() {
     cards[2].style.transform = 'rotateY(0deg)';
-    front[1].style.opacity = '1';
+    front[2].style.opacity = '1';
 }
 function saiu_quatro() {
     cards[3].style.transform = 'rotateY(0deg)';
-    front[1].style.opacity = '1';
+    front[3].style.opacity = '1';
 }
   
